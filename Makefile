@@ -14,7 +14,7 @@ down-volumes:
 tf-action:
 	#!/bin/bash
 	read -p "Directory: " DIRECTORY \
-	read -p "Action: " ACTION \    
+	read -p "Action: " ACTION \     
 	docker compose run --rm terraform -chdir=$(DIRECTORY) $(ACTION)
 
 start-aws-connection:
